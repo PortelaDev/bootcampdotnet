@@ -1,0 +1,14 @@
+/home/caio/projetos/Bootcamp dotNet e C#/bin/Debug/net8.0/Bootcamp dotNet e C#
+/home/caio/projetos/Bootcamp dotNet e C#/bin/Debug/net8.0/Bootcamp dotNet e C#.deps.json
+/home/caio/projetos/Bootcamp dotNet e C#/bin/Debug/net8.0/Bootcamp dotNet e C#.runtimeconfig.json
+/home/caio/projetos/Bootcamp dotNet e C#/bin/Debug/net8.0/Bootcamp dotNet e C#.dll
+/home/caio/projetos/Bootcamp dotNet e C#/bin/Debug/net8.0/Bootcamp dotNet e C#.pdb
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.GeneratedMSBuildEditorConfig.editorconfig
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.AssemblyInfoInputs.cache
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.AssemblyInfo.cs
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.csproj.CoreCompileInputs.cache
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.dll
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/refint/Bootcamp dotNet e C#.dll
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.pdb
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.genruntimeconfig.cache
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/ref/Bootcamp dotNet e C#.dll
