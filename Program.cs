@@ -2,18 +2,48 @@
 using Bootcamp_dotNet_e_C_.Models;
 using System.Globalization;
 
-string dataString = "2022-02-15 18:00";
 
-bool sucesso = DateTime.TryParseExact(dataString,
-   "yyyy-MM-dd HH:mm",
-   CultureInfo.InvariantCulture,
-   DateTimeStyles.None, out DateTime data);
+try
+{
+    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
 
-if (sucesso){
-  Console.WriteLine($"Com sucesso {data}");
-} else {
-  Console.WriteLine($"{dataString} Nao e data valida");
+    foreach (string linha in linhas)
+    {
+      Console.WriteLine(linha);
+    }
+
+} catch(Exception ex){
+
+  Console.WriteLine($"Ocorreu uma excessao generica. {ex.Message}");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// string dataString = "2022-02-15 18:00";
+
+// bool sucesso = DateTime.TryParseExact(dataString,
+//    "yyyy-MM-dd HH:mm",
+//    CultureInfo.InvariantCulture,
+//    DateTimeStyles.None, out DateTime data);
+
+// if (sucesso){
+//   Console.WriteLine($"Com sucesso {data}");
+// } else {
+//   Console.WriteLine($"{dataString} Nao e data valida");
+// }
 
 
 // CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");

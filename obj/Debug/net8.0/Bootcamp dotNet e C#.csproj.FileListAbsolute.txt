@@ -12,3 +12,4 @@
 /home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.pdb
 /home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.genruntimeconfig.cache
 /home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/ref/Bootcamp dotNet e C#.dll
+/home/caio/projetos/Bootcamp dotNet e C#/obj/Debug/net8.0/Bootcamp dotNet e C#.sourcelink.json
