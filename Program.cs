@@ -1,20 +1,36 @@
 ﻿
 using Bootcamp_dotNet_e_C_.Models;
-using System.Globalization;
 
 
-try
-{
-    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-    foreach (string linha in linhas)
-    {
-      Console.WriteLine(linha);
-    }
 
-} catch(Exception ex){
 
-  Console.WriteLine($"Ocorreu uma excessao generica. {ex.Message}");
+estados.Add("SP", "São Paulo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais");
+
+foreach(KeyValuePair<string, string> item in estados){
+  Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+Console.WriteLine("------");
+
+estados.Remove("BA");
+estados["SP"] = "Sao paulo alterado";
+
+
+foreach(var item in estados){
+  Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+string chave = "BA";
+Console.WriteLine($"Verificando o Elemento: {chave}");
+
+if (estados.ContainsKey(chave)){
+  Console.WriteLine($"VAlor existente {chave}");
+} else {
+  Console.WriteLine($"VAlor nao existe {chave}");
 }
 
 
@@ -25,6 +41,88 @@ try
 
 
 
+
+// Stack<int> pilha = new Stack<int>();
+
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
+
+// foreach(int item in pilha)
+// {
+//   Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o ultimo elementodo do topo {pilha.Pop()}");
+
+// pilha.Push(20);
+
+
+
+// foreach(int item in pilha)
+// {
+//   Console.WriteLine(item);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
+
+// foreach(int item in fila){
+//   Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+
+// foreach(int item in fila){
+//   Console.WriteLine(item);
+// }
+
+
+
+
+// new ExemploExcecao().Metodo1();
+
+
+
+// try
+// {
+//     string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+//     foreach (string linha in linhas)
+//     {
+//       Console.WriteLine(linha);
+//     }
+
+// } 
+// catch(Exception ex){
+
+//   Console.WriteLine($"Ocorreu uma excessao generica. {ex.Message}");
+// }
+// finally 
+// {
+//   Console.WriteLine("Chegou ate aqui");
+// }
 
 
 
