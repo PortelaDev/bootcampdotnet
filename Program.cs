@@ -1,37 +1,47 @@
 ﻿
+using System;
+using System.Security.Cryptography;
 using Bootcamp_dotNet_e_C_.Models;
 
+//INTRODUCAO A PARADIGMA POO EM Csharp
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+ContaCorrente c1 = new ContaCorrente(123, 1000);
 
-
-
-estados.Add("SP", "São Paulo");
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
-
-foreach(KeyValuePair<string, string> item in estados){
-  Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
-
-Console.WriteLine("------");
-
-estados.Remove("BA");
-estados["SP"] = "Sao paulo alterado";
+c1.ExibirSaldo();
+c1.Sacar(5000);
+c1.ExibirSaldo();
 
 
-foreach(var item in estados){
-  Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
+// Dictionary<string, string> estados = new Dictionary<string, string>();
 
-string chave = "BA";
-Console.WriteLine($"Verificando o Elemento: {chave}");
 
-if (estados.ContainsKey(chave)){
-  Console.WriteLine($"VAlor existente {chave}");
-} else {
-  Console.WriteLine($"VAlor nao existe {chave}");
-}
+
+// estados.Add("SP", "São Paulo");
+// estados.Add("BA", "Bahia");
+// estados.Add("MG", "Minas Gerais");
+
+// foreach(KeyValuePair<string, string> item in estados){
+//   Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+// Console.WriteLine("------");
+
+// estados.Remove("BA");
+// estados["SP"] = "Sao paulo alterado";
+
+
+// foreach(var item in estados){
+//   Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+// string chave = "BA";
+// Console.WriteLine($"Verificando o Elemento: {chave}");
+
+// if (estados.ContainsKey(chave)){
+//   Console.WriteLine($"VAlor existente {chave}");
+// } else {
+//   Console.WriteLine($"VAlor nao existe {chave}");
+// }
 
 
 
