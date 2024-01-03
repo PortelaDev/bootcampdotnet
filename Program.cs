@@ -1,15 +1,26 @@
 ﻿
-using System;
-using System.Security.Cryptography;
+using Bootcamp_dotNet_e_C_.interfaces;
 using Bootcamp_dotNet_e_C_.Models;
+
+
+
+ICalculadora calc = new Calculadora();
+Console.WriteLine(calc.multiplicar(3, 9));
+
+
+
+
+
+
+
 
 //INTRODUCAO A PARADIGMA POO EM Csharp
 
-ContaCorrente c1 = new ContaCorrente(123, 1000);
+// ContaCorrente c1 = new ContaCorrente(123, 1000);
 
-c1.ExibirSaldo();
-c1.Sacar(5000);
-c1.ExibirSaldo();
+// c1.ExibirSaldo();
+// c1.Sacar(5000);
+// c1.ExibirSaldo();
 
 
 // Dictionary<string, string> estados = new Dictionary<string, string>();

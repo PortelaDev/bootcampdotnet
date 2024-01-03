@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bootcamp_dotNet_e_C_.interfaces;
 
 namespace Bootcamp_dotNet_e_C_.Models
 {
-    public class Calculadora
+    public class Calculadora : ICalculadora
     {
         public void somar(int x, int y){
             Console.WriteLine($"{x} + {y} = {x + y}");
@@ -45,6 +46,26 @@ namespace Bootcamp_dotNet_e_C_.Models
         public void raizQ(double x){
             double raiz = Math.Sqrt(x);
             Console.WriteLine($"A raiz quadrada de {x} = {raiz}");
+        }
+
+        public int soma(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        int ICalculadora.subtrair(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+
+        int ICalculadora.multiplicar(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        int ICalculadora.dividir(int num1, int num2)
+        {
+            return num1 / num2;
         }
     }
 }
